@@ -44,7 +44,6 @@ async def startup_event():
         logger.info("RAG system ready!")
     except Exception as e:
         logger.error(f"Failed to initialize: {e}")
-        raise
 
 
 @app.get("/")
@@ -156,5 +155,6 @@ async def process_pdfs_endpoint(pdf_path: str = "./data/pdfs"):
 
 if __name__ == "__main__":
     import uvicorn
+
 
     uvicorn.run(app, host="0.0.0.0", port=8000)
