@@ -1,27 +1,29 @@
-fastapi
-uvicorn[standard]
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
 python-multipart
 
-# RAG + Embeddings + Vector DB
-sentence-transformers
-chromadb
+# RAG
+chromadb==0.5.5
 faiss-cpu
 numpy
 scikit-learn
 
-# PDF Loaders
+# Embeddings
+sentence-transformers==2.7.0
+
+# PDF
 pypdf
 pymupdf
 
 # LangChain
-langchain
-langchain-core
+langchain==0.2.14
 langchain-community
 langchain-text-splitters
 langchain-groq
 
 # Environment
 python-dotenv
-pydantic>=2.7
+pydantic==2.7.4
 pydantic-settings
+
 
